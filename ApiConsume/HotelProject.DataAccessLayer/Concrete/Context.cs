@@ -13,7 +13,7 @@ namespace HotelProject.DataAccessLayer.Concrete
         //burada yaptığımız işlem ekleyeceğimiz migration çin bağlantı kısmını ezmek ve istediğimiz bağlantıya gidip bizim için bizim vereceğimiz isimle bir veri tabanı oluşturmasını sağlamak.
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=MEHMETTEKIN\\MSSQL;initial catolog=ApiDb;integrated security=true");// burada dedikki dostum bağlantı adresinin adı şu initial catolog kısmında da veri tabanı adın bu doğrulama ile de gir dedik.
+            optionsBuilder.UseSqlServer("server=MEHMETTEKIN\\MSSQL;initial catalog=ApiDb;integrated security=true");// burada dedikki dostum bağlantı adresinin adı şu initial catolog kısmında da veri tabanı adın bu doğrulama ile de gir dedik.
         }
 
         //şimdi de entitylerimizi eklemeliyiz ki db içindeki tablolarmız oluşsun
